@@ -18,6 +18,8 @@ class Pokemon
   def self.find(id, db)
     sql = "SELECT * FROM pokemon WHERE id = ? LIMIT 1"
     
-    pkmn_info =
+    pkmn_info = db.execute(sql, id)
+    
+    save()
   end 
 end
