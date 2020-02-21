@@ -20,6 +20,6 @@ class Pokemon
     
     pkmn_info = db.execute(sql, id)
     
-    
+    Pokemon.new(id:)
   end 
 end
