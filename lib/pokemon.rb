@@ -18,7 +18,7 @@ class Pokemon
   def self.find(id, db)
     sql = "SELECT * FROM pokemon WHERE id = ? LIMIT 1"
     
-    pkmn_info = db.execute(sql, id)
+    pkmn_info = db.execute(sql, id).flatten
     
     #binding.pry
     pokemon_obj = Pokemon.new(id: pkmn_info[0], name: pkmn_info[1], type: pkmn_info[2], db: db)
