@@ -22,6 +22,6 @@ class Pokemon
     
     #binding.pry
     
-    Pokemon.new(id: pkmn_info)
+    Pokemon.new(id: pkmn_info[0], name: pkmn_info[1], type: pkmn_info[2], db: db)
   end 
 end
