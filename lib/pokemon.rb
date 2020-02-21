@@ -9,8 +9,7 @@ class Pokemon
     @id = id 
   end 
   
-  def self.save(pk_name, pk_type, db)
-    
+  def save(pk_name, pk_type, db)
     sql = "INSERT INTO pokemon (name, type) VALUES (?, ?)"
     db.execute(sql, self.pk_name, self.pk_type)
     @id = db.execute("SELECT last_insert_rowid() FROM pokemon")
