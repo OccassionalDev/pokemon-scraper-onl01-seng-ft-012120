@@ -14,4 +14,10 @@ class Pokemon
     db.execute(sql, pk_name, pk_type)
     @id = db.execute("SELECT last_insert_rowid() FROM pokemon")
   end 
+  
+  def self.find(id, db)
+    sql = "SELECT * FROM pokemon WHERE id = ? LIMIT 1"
+    
+    db.execute(sql, id).collect
+  end 
 end
