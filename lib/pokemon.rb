@@ -9,6 +9,6 @@ class Pokemon
   end 
   
   def save 
-    sql = "INSERT INTO pokemon"
+    sql = "INSERT INTO pokemon (pokemon_name, pokemon_type)"
   end 
 end
