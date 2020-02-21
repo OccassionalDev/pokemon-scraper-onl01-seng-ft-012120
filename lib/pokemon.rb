@@ -19,7 +19,5 @@ class Pokemon
     sql = "SELECT * FROM pokemon WHERE id = ? LIMIT 1"
     
     pkmn_info = db.execute(sql, id)
-    
-    save()
   end 
 end
