@@ -20,6 +20,6 @@ class Pokemon
     
     pkmn_info = db.execute(sql, id)
     
-    binding.pry
+    
   end 
 end
