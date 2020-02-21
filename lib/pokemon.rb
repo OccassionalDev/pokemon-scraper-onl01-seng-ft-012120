@@ -2,8 +2,8 @@ class Pokemon
   attr_accessor :pk_name, :pk_type, :db
   attr_reader :id 
   
-  def intitalize(id = nil, pk_name, pk_type, db)
-    @pk_name = pk_name
+  def intitalize(id: = nil, name:, type:, db:)
+    @pk_name = name
     @pk_type = pk_type
     @db = db
     @id = id 
