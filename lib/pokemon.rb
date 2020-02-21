@@ -20,6 +20,8 @@ class Pokemon
     
     pkmn_info = db.execute(sql, id)
     
-    Pokemon.new(id:)
+    #binding.pry
+    
+    Pokemon.new(id: pkmn_info)
   end 
 end
