@@ -8,10 +8,7 @@ class Pokemon
     @id = id 
   end 
   
-  def save 
-    if self.id 
-      self.update
-    end 
+  def save
     
     sql = "INSERT INTO pokemon (name, type) VALUES (?, ?)"
     DB[:conn].execute(sql, self.pk_name, self.pk_type)
