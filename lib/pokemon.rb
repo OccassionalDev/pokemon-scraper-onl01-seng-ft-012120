@@ -4,7 +4,7 @@ class Pokemon
   
   def intitalize(id: = nil, name:, type:, db:)
     @pk_name = name
-    @pk_type = pk_type
+    @pk_type = 
     @db = db
     @id = id 
   end 
