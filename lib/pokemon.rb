@@ -21,7 +21,8 @@ class Pokemon
     pkmn_info = db.execute(sql, id)
     
     #binding.pry
+    pokemon_obj = Pokemon.new(id: pkmn_info[0], name: pkmn_info[1], type: pkmn_info[2], db: db)
     
-    Pokemon.new(id: pkmn_info[0], name: pkmn_info[1], type: pkmn_info[2], db: db)
+    pokemon_obj
   end 
 end
